@@ -1,0 +1,52 @@
+.menu {
+    bottom: 0;
+    text-align: center;
+}
+
+.menu-content,
+.menu-content ul {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-content {
+    height: 100vh;
+}
+
+.menu {
+    display: none;
+}
+
+.close-menu-label::after {
+    content: '☰';
+    position: fixed;
+    z-index: 2;
+    top: 2rem;
+    right: 2rem;
+    background: #0A1128;
+    color: #FFFFFF;
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.close-menu:checked~.menu {
+    display: block;
+}
+
+.close-menu:checked~.close-menu-label::after {
+    content: 'x';
+}
+
+.menu-spacing {
+    display: none;
+}
+
+.intro-content,
+.grid {
+    grid-template-columns: 1fr;
+}

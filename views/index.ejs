@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style800.css" media="(max-width:800px)">
+
+</head>
+
+<body>
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <a href="#home">LOGO</a>
+            </h1>
+
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#intro">INTRO</a></li>
+                    <li><a href="#grid-one">MY GRID</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <section id="home" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>HTML 5 | CSS3 | JS</h2>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex eum ullam sequi repellendus corporis
+                    inventore molestias delectus veritatis illo, assumenda quos a sapiente porro officia amet quibusdam
+                    eligendi nam itaque! </p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/images/javascript.svg" alt="Logo de HTML, CSS e JS.">
+            </div>
+        </div>
+    </section>
+
+    <section id="intro" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, ab, culpa consequuntur perspiciatis
+                asperiores odit unde distinctio quo quae nihil, quos quaerat aperiam ipsa perferendis quod maiores vitae
+                deleniti corrupti.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, ab, culpa consequuntur perspiciatis
+                asperiores odit unde distinctio quo quae nihil, quos quaerat aperiam ipsa perferendis quod maiores vitae
+                deleniti corrupti.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, ab, culpa consequuntur perspiciatis
+                asperiores odit unde distinctio quo quae nihil, quos quaerat aperiam ipsa perferendis quod maiores vitae
+                deleniti corrupti.</p>
+        </div>
+    </section>
+
+    <section id="grid-one" class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">My Grid</h2>
+            <div class="grid">
+                <article>
+                    <h3>Teste 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore unde tempora quis temporibus cum
+                        dolores accusantium officiis iusto, animi dignissimos enim eveniet corrupti fugit eaque nemo eos? Atque, 
+                        quam quos.</p>
+                </article>
+                <article>
+                    <h3>Teste 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore unde tempora quis temporibus cum
+                        dolores accusantium officiis iusto, animi dignissimos enim eveniet corrupti fugit eaque nemo eos? Atque,
+                        quam quos.</p>
+                </article>
+                <article>
+                    <h3>Teste 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore unde tempora quis temporibus cum
+                        dolores accusantium officiis iusto, animi dignissimos enim eveniet corrupti fugit eaque nemoeos? Atque, 
+                        quam quos.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="grid-one white-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Gallery</h2>
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=1" alt="random image from unsplash" />
+                </div>
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=2" alt="random image from unsplash" />
+                </div>
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=3" alt="random image from unsplash" />
+                </div>
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=4" alt="random image from unsplash" />
+                </div>
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=5" alt="random image from unsplash" />
+                </div>
+                <div class="gallery-img">
+                    <img src="http://source.unsplash.com/random/360x360?r=6" alt="random image from unsplash" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="intro maing-bg section">
+        <div class="maing-content intro-content">
+            <div class="contact-form">
+                <h2 class="grid-main-heading">Contact</h2>
+                <form action="" method="post">
+                    <fieldset class="form-grid">
+
+                        <div class="form-group">
+                            <label for="first-name">First name</label>
+                            <input type="text" name="first_name" id="first-name" placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="first-name">Last name</label>
+                            <input type="text" name="last_name" id="last-name" placeholder="Your last name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="text" name="email" id="email" placeholder="Your e-mail">
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="message">Message</label>
+                            <input type="message" name="message" id="message" cols="30" rows="10"
+                                placeholder="Your message"></textarea>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <button type="submit">Send Message</button>
+                        </div>
+                        <fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer white-bg">
+        <p><a rel="nofollow" target="_blank" href="#">Feito com <span class="heart">♡</span> AC - 1 Trimestre -
+                INW | BD2 | LP2</a></p>
+    </footer>
+
+    <a class="back-to-top" href="#">▶</a>
+
+</body>
+</html>
